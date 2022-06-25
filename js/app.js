@@ -5,6 +5,9 @@
     var grid = $(".grid").isotope({
         itemSelector: ".grid-item",
         percentPosition: true,
+        masonry: {
+            columnWidth: 1
+        }
     });
     // filter items on button click
     $(".filter-button-group").on("click", "button", function () {
