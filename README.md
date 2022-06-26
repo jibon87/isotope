@@ -15,7 +15,9 @@ isotop
 
 
                                     // isotop css
-
+				    .isotop-img-box{
+			               margin: 10px !important;
+				   }
                                     .isotop-img-box img {
                                         width: 100%;
                                         height: 100%;
@@ -68,85 +70,11 @@ isotop
                     <button data-filter=".islamic">islamic</button>
                 </div>
             </div>
-            <div class="row grid g-2 g-md-4">
+            <div class="row grid g-0">
                 <!-- nature -->
-                <div class="col-6 col-sm-4 grid-item nature">
+                <div class="col-6 col-md-4 grid-item nature">
                     <div class="isotop-img-box">
-                        <img src="img/nature/slider-1.jpg" alt="" srcset="" />
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 grid-item nature">
-                    <div class="isotop-img-box">
-                        <img src="img/nature/slider-2.jpg" alt="" srcset="" />
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 grid-item nature">
-                    <div class="isotop-img-box">
-                        <img src="img/nature/slider-3.jpg" alt="" srcset="" />
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 grid-item nature">
-                    <div class="isotop-img-box">
-                        <img src="img/nature/slider-4.jpg" alt="" srcset="" />
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 grid-item nature">
-                    <div class="isotop-img-box">
-                        <img src="img/nature/slider-5.jpg" alt="" srcset="" />
-                    </div>
-                </div>
-                <!-- motivation -->
-                <div class="col-6 col-sm-4 grid-item motivation">
-                    <div class="isotop-img-box">
-                        <img src="img/motivation/motivation-1.jpg" alt="" srcset="" />
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 grid-item motivation">
-                    <div class="isotop-img-box">
-                        <img src="img/motivation/motivation-2.jpg" alt="" srcset="" />
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 grid-item motivation">
-                    <div class="isotop-img-box">
-                        <img src="img/motivation/motivation-3.jpg" alt="" srcset="" />
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 grid-item motivation">
-                    <div class="isotop-img-box">
-                        <img src="img/motivation/motivation-4.jpg" alt="" srcset="" />
-                    </div>
-                </div>
-                <!-- islamic -->
-                <div class="col-6 col-sm-4 grid-item islamic">
-                    <div class="isotop-img-box">
-                        <img src="img/islamic/islamic-1.jpg" alt="" srcset="" />
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 grid-item islamic">
-                    <div class="isotop-img-box">
-                        <img src="img/islamic/islamic-2.jpg" alt="" srcset="" />
-                    </div>
-                </div>
-                <!-- flowers -->
-                <div class="col-6 col-sm-4 grid-item flowers">
-                    <div class="isotop-img-box">
-                        <img src="img/flowers/flowers.jpg" alt="" srcset="" />
-                    </div>
-                </div>
-                <!-- coding -->
-                <div class="col-6 col-sm-4 grid-item coding">
-                    <div class="isotop-img-box">
-                        <img src="img/coding/coding-1.jpg" alt="" srcset="" />
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 grid-item coding">
-                    <div class="isotop-img-box">
-                        <img src="img/coding/coding-2.jpg" alt="" srcset="" />
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 grid-item coding">
-                    <div class="isotop-img-box">
-                        <img src="img/coding/coding-3.jpg" alt="" srcset="" />
+                        <img src="img/nature/slider-1.jpg" alt="jibon"/>
                     </div>
                 </div>
             </div>
@@ -160,6 +88,9 @@ isotop
     var grid = $(".grid").isotope({
         itemSelector: ".grid-item",
         percentPosition: true,
+	masonry: {
+            columnWidth: 1
+        }
     });
     // filter items on button click
     $(".filter-button-group").on("click", "button", function () {
@@ -177,9 +108,9 @@ isotop
 8.  note [ 
            <button data-filter=".islamic">islamic</button>
 
-           <div class="col-6 col-sm-4 grid-item islamic">
+           <div class="col-6 col-md-4 grid-item islamic">
                 <div class="isotop-img-box">
-                    <img src="img/islamic/islamic-2.jpg" alt="" srcset="" />
+                    <img src="img/islamic/islamic-2.jpg" alt="jibon"/>
                 </div>
             </div>
 
